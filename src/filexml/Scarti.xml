@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assicurati>
+    <assicurato>
+        <nome>Pluto</nome>
+        <cognome>Rossi</cognome>
+        <codicefiscale>ababab34</codicefiscale>
+        <numerosinistri>5</numerosinistri>
+    </assicurato>
+</assicurati>
