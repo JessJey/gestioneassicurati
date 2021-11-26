@@ -3,6 +3,7 @@ package it.prova.gestioneassicurati.service;
 import java.util.List;
 
 import it.prova.gestioneassicurati.model.Assicurato;
+import it.prova.gestioneassicurati.xml.Assicurati;
 
 public interface AssicuratoService {
 
@@ -12,7 +13,7 @@ public interface AssicuratoService {
 	
 	Assicurato aggiorna(Assicurato assicuratoInstance);
 	
-	Assicurato inserisciNuovo(Assicurato assicuratoInstance);
+	Assicurato inserisciNuovo(Assicurato assItem);
 	
 	public void rimuovi(Assicurato assicuratoInstance);
 

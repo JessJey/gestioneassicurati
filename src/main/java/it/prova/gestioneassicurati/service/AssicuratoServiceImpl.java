@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import it.prova.gestioneassicurati.model.Assicurato;
 import it.prova.gestioneassicurati.repository.AssicuratoRepository;
+import it.prova.gestioneassicurati.xml.Assicurati;
 
 @Service
 public class AssicuratoServiceImpl implements AssicuratoService {
@@ -41,7 +42,7 @@ public class AssicuratoServiceImpl implements AssicuratoService {
 	}
 
 	@Override
-	public Assicurato searchAssicurato(Assicurato assicuratoInstance) {
+	public Assicurato searchAssicurato(Assicurato  assicuratoInstance) {
 		String nome = assicuratoInstance.getNome();
 		String cognome = assicuratoInstance.getCognome();
 		String codiceFiscale = assicuratoInstance.getCodiceFiscale();
@@ -57,5 +58,6 @@ public class AssicuratoServiceImpl implements AssicuratoService {
 		assicurato.setNumerosinistri(assicuratoInstance.getNumeroSinistri().add(assicurato.getNumeroSinistri()));
 		repository.save(assicurato);
 	}
+	
 
 }
